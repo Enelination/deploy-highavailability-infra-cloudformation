@@ -1,4 +1,4 @@
-Description: This template deploys network infrastructure needed for Udagram web application.
+Description: This template deploys network infrastructure needed for udagram web.
 
 Parameters:
   EnvironmentName:

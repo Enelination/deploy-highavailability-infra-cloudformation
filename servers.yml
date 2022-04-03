@@ -1,4 +1,4 @@
-Description: This template deploys the servers and other resources for Udagram web application.
+Description: This template deploys the servers and other resources for the udagra web  app.
 
 Parameters:
   EnvironmentName:
@@ -102,10 +102,11 @@ Resources:
         Fn::Base64: !Sub |
           #!/bin/bash
           apt-get update -y
+          apt-get install unzip awscli -y
           apt-get install apache2 -y
           systemctl start apache2.service
           cd /var/www/html
-          echo "it works! Udagram, Udacity!!" > index.html
+          aws s3 cp s3://ea-udagram-bc/index.html
       ImageId: !Ref ServerAMIId
       IamInstanceProfile: !Ref S3BucketsInstanceProfile
       SecurityGroups:

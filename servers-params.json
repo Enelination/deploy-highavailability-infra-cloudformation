@@ -5,10 +5,11 @@
   },
   {
     "ParameterKey": "ServerAMIId",
-    "ParameterValue": "ami-0c02fb55956c7d316"
+    "ParameterValue": "ami-064ff912f78e3e561"
   },
   {
     "ParameterKey": "InstanceType",
     "ParameterValue": "t3.medium"
   }
 ]
+
